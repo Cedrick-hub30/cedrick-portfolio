@@ -1134,9 +1134,24 @@ body.dark-mode .project-link {
 
 
 .certification-card h3 {
-    font-size: 1.05rem;
+    font-size: 1.3rem;
+
+    line-height: 1.25;
+
+    font-weight: 700;
 
     margin: 12px 0 5px;
+}
+
+
+.certification-institution {
+    margin: 0 0 12px;
+
+    color: var(--text);
+
+    font-size: 0.98rem;
+
+    font-weight: 700;
 }
 
 
@@ -1144,6 +1159,8 @@ body.dark-mode .project-link {
     color: var(--text-light);
 
     font-size: 0.85rem;
+
+    line-height: 1.6;
 }
 
 
