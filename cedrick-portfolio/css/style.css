@@ -675,6 +675,106 @@ body.dark-mode .hero h1 span {
 }
 
 
+.attributes-heading {
+    margin: 52px 0 22px;
+}
+
+
+.attributes-heading span {
+    color: #708b74;
+
+    font-size: 0.72rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.attributes-heading h3 {
+    margin-top: 6px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1.8rem;
+}
+
+
+.attributes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+.attribute-card {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+
+    padding: 22px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+
+.attribute-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow);
+}
+
+
+.attribute-icon {
+    display: grid;
+
+    width: 34px;
+    height: 34px;
+
+    place-items: center;
+
+    background: var(--cream);
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    color: var(--dark-green);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+
+.attribute-card h3 {
+    align-self: center;
+
+    font-size: 0.98rem;
+}
+
+
+.attribute-card p {
+    grid-column: 1 / -1;
+
+    margin-top: 12px;
+
+    color: var(--text-light);
+
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+
 /* =========================
    PROJECTS
    ========================= */
