@@ -331,6 +331,7 @@ body.dark-mode .hero h1 span {
 
     align-items: center;
     justify-content: center;
+    gap: 9px;
 
     padding: 13px 23px;
 
@@ -372,6 +373,35 @@ body.dark-mode .hero h1 span {
     background: var(--dark-green);
 
     color: white;
+}
+
+
+.cv-download-button {
+    background: transparent;
+
+    color: var(--dark-green);
+
+    border: 1px solid var(--border);
+}
+
+
+.cv-download-button:hover {
+    transform: translateY(-3px);
+
+    background: var(--cream-dark);
+}
+
+
+.button-icon {
+    display: inline-grid;
+
+    width: 1.15rem;
+    height: 1.15rem;
+
+    place-items: center;
+
+    font-size: 0.85rem;
+    line-height: 1;
 }
 
 
@@ -871,7 +901,7 @@ body.dark-mode .project-link {
 .experience-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0, 1fr);
 
     gap: 25px;
 }
@@ -887,6 +917,44 @@ body.dark-mode .project-link {
     border-radius: var(--radius);
 
     transition: transform var(--transition);
+}
+
+
+.experience-list {
+    display: grid;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.experience-list li {
+    position: relative;
+
+    padding-left: 25px;
+
+    color: var(--text-light);
+
+    font-size: 0.92rem;
+}
+
+
+.experience-list li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 1px;
+
+    color: #78977e;
+
+    font-weight: 700;
 }
 
 
