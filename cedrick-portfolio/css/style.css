@@ -149,6 +149,10 @@ nav {
 
 
 nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
     color: var(--text-light);
     font-size: 0.88rem;
     font-weight: 600;
@@ -188,6 +192,29 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+
+.nav-icon,
+.contact-icon {
+    display: inline-grid;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    place-items: center;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    font-size: 0.68rem;
+    line-height: 1;
+}
+
+
+.contact-icon {
+    margin-right: 8px;
+    color: #78977e;
 }
 
 
@@ -628,6 +655,8 @@ body.dark-mode .hero h1 span {
 
     font-weight: 700;
 
+    letter-spacing: 0;
+
     margin-bottom: 22px;
 }
 
@@ -703,6 +732,24 @@ body.dark-mode .hero h1 span {
     font-weight: 700;
 
     letter-spacing: 2px;
+}
+
+
+.section-icon {
+    display: inline-grid;
+
+    width: 1.6rem;
+    height: 1.6rem;
+
+    margin-right: 8px;
+
+    place-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    font-size: 0.75rem;
+    letter-spacing: 0;
 }
 
 
@@ -1038,12 +1085,23 @@ body.dark-mode .project-link {
 }
 
 
-.certification-card > span {
+.certification-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
     color: #78977e;
 
     font-size: 0.75rem;
 
     font-weight: 700;
+}
+
+
+.certification-number .section-icon {
+    margin-right: 0;
+
+    border-color: currentColor;
 }
 
 
